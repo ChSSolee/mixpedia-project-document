@@ -43,13 +43,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── Layout ── */
 .layout {
   display: flex;
   min-height: 100vh;
 }
 
-/* ── Sidebar ── */
 .sidebar {
   width: 280px;
   background: var(--sidebar-bg);
@@ -158,7 +156,6 @@ body {
   opacity: 1;
 }
 
-/* sub-nav */
 .nav-link--sub {
   padding: 6px 12px 6px 32px;
   font-size: 0.8rem;
@@ -192,14 +189,12 @@ body {
   display: none;
 }
 
-/* ── Main Content ── */
 .main {
   flex: 1;
   min-width: 0;
   padding: 48px 56px;
 }
 
-/* ── Cover / Title ── */
 .cover {
   margin-bottom: 56px;
   padding-bottom: 40px;
@@ -273,7 +268,6 @@ body {
   color: var(--text-secondary);
 }
 
-/* ── Section ── */
 .section {
   margin-bottom: 52px;
 }
@@ -308,7 +302,6 @@ body {
   background: var(--border);
 }
 
-/* ── Sub-section ── */
 .subsection {
   margin-bottom: 48px;
 }
@@ -324,7 +317,6 @@ body {
   padding-left: 10px;
 }
 
-/* ── Body Text ── */
 p {
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -337,7 +329,6 @@ p:last-child {
   margin-bottom: 0;
 }
 
-/* ── Card ── */
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -357,7 +348,6 @@ p:last-child {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* ── Stat Card ── */
 .stat-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -390,7 +380,6 @@ p:last-child {
   color: var(--text-tertiary);
 }
 
-/* ── Feature List ── */
 .feature-list {
   display: flex;
   flex-direction: column;
@@ -443,7 +432,6 @@ p:last-child {
   margin: 0;
 }
 
-/* ── Tag ── */
 .tag {
   display: inline-block;
   padding: 3px 8px;
@@ -463,7 +451,6 @@ p:last-child {
   font-weight: 600;
 }
 
-/* ── Table ── */
 .report-table {
   width: 100%;
   border-collapse: collapse;
@@ -498,7 +485,6 @@ p:last-child {
   color: var(--text);
 }
 
-/* ── Callout ── */
 .callout {
   display: flex;
   gap: 12px;
@@ -528,7 +514,6 @@ p:last-child {
   color: var(--accent-muted-text);
 }
 
-/* ── Member Table (1-2) ── */
 .member-table {
   width: 100%;
   border-collapse: collapse;
@@ -634,7 +619,6 @@ p:last-child {
   color: var(--accent);
 }
 
-/* ── Need Layout (2-1) ── */
 .need-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -729,7 +713,6 @@ p:last-child {
   font-weight: 600;
 }
 
-/* ── AI Section (3-1) ── */
 .ai-callout {
   background: var(--accent-muted);
   border-left: 3px solid var(--accent);
@@ -820,7 +803,6 @@ p:last-child {
   margin-right: 2px;
 }
 
-/* ── Limit (2-2) ── */
 .limit-wrap {
   display: flex;
   flex-direction: column;
@@ -932,7 +914,6 @@ p:last-child {
   color: var(--text-secondary);
 }
 
-/* ── MixPedia Hero (1-1) ── */
 .mixpedia-hero {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -996,7 +977,6 @@ p:last-child {
   font-weight: 600;
 }
 
-/* ── Grid wrap utility ── */
 .grid-wrap {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -1020,7 +1000,6 @@ p:last-child {
     );
 }
 
-/* ── Placeholder ── */
 .placeholder {
   background: var(--surface);
   border: 1px dashed var(--border);
@@ -1049,7 +1028,6 @@ p:last-child {
   margin: 0;
 }
 
-/* ── Roadmap ── */
 .roadmap {
   display: flex;
   flex-direction: column;
@@ -1134,7 +1112,6 @@ p:last-child {
   margin: 0;
 }
 
-/* ── Embed Transform (3-2) ── */
 .embed-transform {
   display: grid;
   grid-template-columns: 1fr 48px 1fr;
@@ -1238,7 +1215,6 @@ p:last-child {
   letter-spacing: 0.02em;
 }
 
-/* ── Vibe Stack (3-3) ── */
 .vibe-stack {
   display: grid;
   grid-template-columns: 1fr 56px 1fr;
@@ -1326,7 +1302,6 @@ p:last-child {
   letter-spacing: 0.08em;
 }
 
-/* ── LLM Pipeline (3-1) ── */
 .llm-pipeline-header {
   display: flex;
   align-items: center;
@@ -1424,7 +1399,6 @@ p:last-child {
   color: #7c3aed;
 }
 
-/* ── Vector Pipeline (3-2) ── */
 .vector-pipeline {
   display: flex;
   align-items: center;
@@ -1508,7 +1482,6 @@ p:last-child {
   font-family: var(--font-body);
 }
 
-/* ── Process Steps (4-1) ── */
 .proc-steps {
   display: flex;
   flex-direction: column;
@@ -1632,7 +1605,6 @@ p:last-child {
   border: 1px solid #fde68a;
 }
 
-/* ── MediaMix Image Preview (4-1 step 03) ── */
 .mm-img-wrap {
   display: flex;
   border: 1px solid var(--border);
@@ -1755,7 +1727,6 @@ p:last-child {
   color: #4b5563;
 }
 
-/* ── Print ── */
 @media print {
   .sidebar {
     display: none;
