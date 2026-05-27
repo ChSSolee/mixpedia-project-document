@@ -710,7 +710,6 @@ p:last-child {
 
 .hl {
   color: var(--accent);
-  font-weight: 600;
 }
 
 .ai-callout {
@@ -760,9 +759,8 @@ p:last-child {
   font-size: 0.85rem;
   color: var(--text-secondary);
   line-height: 1.7;
-  display: flex;
-  gap: 8px;
-  align-items: flex-start;
+  padding-left: 14px;
+  position: relative;
   margin: 0;
 }
 
@@ -772,8 +770,9 @@ p:last-child {
 
 .ai-bullets li::before {
   content: "•";
-  flex-shrink: 0;
-  margin-top: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
   color: var(--text-tertiary);
 }
 
@@ -1748,4 +1747,35 @@ p:last-child {
   .card-grid--3 {
     grid-template-columns: 1fr;
   }
+}
+
+#scroll-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, background 0.15s;
+  z-index: 100;
+}
+
+#scroll-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#scroll-top:hover {
+  background: var(--accent-muted);
+  color: var(--accent);
+  border-color: var(--accent);
 }
